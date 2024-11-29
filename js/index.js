@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const storedUser = localStorage.getItem('inoveUser');
     if (storedUser) {
         // Si existe un usuario en localStorage, redirigir a /cursos
-        window.location.href = '/cursos.html';
+        window.location.href = './cursos.html';
     }
 });
 
@@ -58,5 +58,5 @@ function findUserByUser2(emailPrefix) {
 
 function saveUserAndRedirect(user) {
     localStorage.setItem('inoveUser', user); // Guardar el usuario en localStorage
-    window.location.href = '/cursos.html'; // Redirigir a la página /cursos
+    window.location.href = './cursos.html'; // Redirigir a la página /cursos
 }

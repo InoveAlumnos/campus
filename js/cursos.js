@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (!storedUser || !users[storedUser]) {
         // Si no hay usuario válido en localStorage
         localStorage.removeItem('inoveUser'); // Borrar localStorage
-        window.location.href = 'index.html'; // Redirigir a index.html
+        window.location.href = './index.html'; // Redirigir a index.html
         return;
     }
 
@@ -76,6 +76,6 @@ function generateCourseCardHTML(course, userCertificates) {
 document.querySelector('#logout').addEventListener('click', function(event) {
     event.preventDefault(); // Prevenir el envío del formulario
     localStorage.removeItem('inoveUser'); // Borrar localStorage
-    window.location.href = 'index.html'; // Redirigir a index.html
+    window.location.href = './index.html'; // Redirigir a index.html
     return;
 });

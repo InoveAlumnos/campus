@@ -49,5 +49,5 @@ function findUserByUser2(emailPrefix) {
 
 function saveUserAndRedirect(user) {
     localStorage.setItem('inoveUser', user); // Guardar el usuario en localStorage
-    window.location.href = '/cursos.html'; // Redirigir a la página /cursos
+    window.location.href = './cursos.html'; // Redirigir a la página /cursos
 }
