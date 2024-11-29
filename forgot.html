@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Credenciales</title>
+  <link rel="stylesheet" href="forgot.css">
+  <link rel="icon" href="./images/inove_logo.svg" type="image/x-icon">
+</head>
+<body>
+  <div class="container">
+    <div class="right">
+      <div class="login-form">
+        <div class="logo-icon">
+          <img src="images/inove_logo.svg" alt="Logo Inove">
+        </div>
+        <p class="login-instrucciones">Ingrese su usuario/email de alumno y su DNI y el sistema analizará y habilitará la entrada</p>
+        <form>
+          <div class="form-group">
+            <label for="email">Usuario / Email *</label>
+            <input type="text" id="email" placeholder="Ingrese su usuario o email">
+          </div>
+          <div class="form-group">
+            <label for="password">DNI</label>
+            <div class="password-container">
+              <input type="text" id="dni" placeholder="Ingrese su DNI">
+              <button type="button" class="toggle-password">&#128065;</button>
+            </div>
+          </div>
+          <button type="submit" class="btn" id="login">LOG IN</button>
+        </form>
+        <p class="terms">
+          Al iniciar sesión estás aceptando nuestros <a href="https://inovecode.com/terminos-y-condiciones/">términos y condiciones</a>.
+        </p>
+        <p><a href="./index.html">Volver a la pantalla anterior</a></p>
+        <footer>
+          <p>Copyright © Inovecode 2024.</p>
+        </footer>
+      </div>
+    </div>
+    <div class="left">
+      <div class="logo">
+      </div>
+    </div>
+  </div>
+
+  <script src="js/users.js"></script>
+  <script src="js/forgot.js"></script>
+
+</body>
+</html>

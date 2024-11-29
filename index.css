@@ -1,0 +1,180 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    height: 100%;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #202020;
+    color: white;
+  }
+  
+  /* Container */
+  .container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #202020;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Left panel */
+  .left {
+    flex: 1;
+    background-image: url('images/inove_fondo.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo h1 {
+    font-size: 5rem;
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Right panel */
+  .right {
+    flex: 1;
+    min-width: 400px;
+    background-color: #303030;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+  }
+  
+  .login-form {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .logo-icon img {
+    width: 150px;
+    height: auto;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin: 20px 0;
+  }
+  
+  p {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    color: #ccc;
+  }
+  
+  a {
+    color: #00ffcc;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Form styles */
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #404040;
+    color: white;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #00ffcc;
+  }
+  
+  .password-container {
+    position: relative;
+  }
+  
+  .toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #00ffcc;
+    cursor: pointer;
+  }
+  
+  .btn {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00ffcc;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #00e6b3;
+  }
+  
+  /* Footer */
+  footer p {
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 20px;
+  }
+
+@media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .left {
+      height: 300px;
+    }
+  
+    .logo h1 {
+      font-size: 3rem;
+    }
+  
+    .right {
+      padding: 20px;
+    }
+  
+    .login-form {
+      max-width: 100%;
+    }
+  
+}
