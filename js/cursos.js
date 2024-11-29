@@ -12,11 +12,17 @@ document.addEventListener('DOMContentLoaded', function () {
     // Si el usuario existe, cargar los datos
     const userData = users[storedUser];
     renderUserCourses(userData, storedUser);
+    document.querySelectorAll('.card-logo').forEach(function(cardLogo) {
+        cardLogo.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevenir el comportamiento predeterminado
+            alert("Este curso está cerrado, leer el detalle en la descripción de esta página");
+        });
+    });
 });
 
 // Función para renderizar cursos del usuario
 function renderUserCourses(userData, username) {
-    const mainDiv = document.querySelector('.main');
+    const mainDiv = document.querySelector('.cursos');
     if (!mainDiv) return;
 
     let htmlContent = ''; // Para acumular el contenido HTML
@@ -24,14 +30,14 @@ function renderUserCourses(userData, username) {
     // Renderizar cursos de backend si tiene acceso
     if (userData.backend) {
         courses.backend.forEach(course => {
-            htmlContent += generateCourseCardHTML(course, certificates[username]);
+            htmlContent += generateCourseCardHTML(course, certificates[username], 'backend');
         });
     }
 
     // Renderizar cursos de frontend si tiene acceso
     if (userData.frontend) {
         courses.frontend.forEach(course => {
-            htmlContent += generateCourseCardHTML(course, certificates[username]);
+            htmlContent += generateCourseCardHTML(course, certificates[username], 'frontend');
         });
     }
 
@@ -40,7 +46,7 @@ function renderUserCourses(userData, username) {
 }
 
 // Función para generar el HTML de un curso
-function generateCourseCardHTML(course, userCertificates) {
+function generateCourseCardHTML(course, userCertificates, career) {
     // Verificar si hay un certificado disponible
     const certificadoHTML = userCertificates && userCertificates[course.label]
         ? `
@@ -50,6 +56,26 @@ function generateCourseCardHTML(course, userCertificates) {
             </a>
           `
         : '';
+
+        const certificadoCarreraBackend = career=='backend' && userCertificates && userCertificates['carrera_backend']
+        ? `
+            <a class="card-info-item" href="${userCertificates['carrera_backend']}" target="_blank">
+                <img src="./images/certificado.png" width="42px" height="38px">
+                <span>Certificado Carrera</span>
+            </a>
+          `
+        : '';
+
+        const certificadoCarreraFrontend = career=='frontend' && userCertificates && userCertificates['carrera_frontend']
+        ? `
+            <a class="card-info-item" href="${userCertificates['carrera_frontend']}" target="_blank">
+                <img src="./images/certificado.png" width="42px" height="38px">
+                <span>Certificado Carrera</span>
+            </a>
+          `
+        : '';
+
+    
 
     // Retornar el HTML completo para este curso
     return `
@@ -68,6 +94,8 @@ function generateCourseCardHTML(course, userCertificates) {
                     <span>Apuntes</span>
                 </a>
                 ${certificadoHTML}
+                ${certificadoCarreraBackend}
+                ${certificadoCarreraFrontend}
             </div>
         </div>
     `;
@@ -79,3 +107,4 @@ document.querySelector('#logout').addEventListener('click', function(event) {
     window.location.href = './index.html'; // Redirigir a index.html
     return;
 });
+
