@@ -60,3 +60,17 @@ function saveUserAndRedirect(user) {
     localStorage.setItem('inoveUser', user); // Guardar el usuario en localStorage
     window.location.href = './cursos.html'; // Redirigir a la página /cursos
 }
+
+// Seleccionar el botón de toggle y el input de contraseña
+document.querySelectorAll('.toggle-password').forEach(toggle => {
+    toggle.addEventListener('click', function () {
+        const passwordInput = this.previousElementSibling;
+        if (passwordInput.type === "password") {
+            passwordInput.type = "text";
+            this.textContent = "🔒";
+        } else {
+            passwordInput.type = "password";
+            this.textContent = "👁️";
+        }
+    });
+});
