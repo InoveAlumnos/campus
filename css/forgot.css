@@ -33,7 +33,7 @@
   /* Left panel */
   .left {
     flex: 1;
-    background-image: url('images/inove_fondo.jpg'); /* Ruta de la imagen de fondo */
+    background-image: url('images/inove_fondo_2.jpg'), url('../images/inove_fondo_2.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -63,6 +63,11 @@
     width: 100%;
     max-width: 400px;
     text-align: center;
+  }
+
+  .login-instrucciones {
+    padding-top: 20px;
+    text-align: left;
   }
   
   .logo-icon img {
