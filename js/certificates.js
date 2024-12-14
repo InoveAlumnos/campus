@@ -155,6 +155,7 @@ const certificates = {
         "desarrollador_web": "https://drive.google.com/file/d/1thxoZt_7R3dVGddc6Q3IAB8yQoJKvG6f/view?usp=sharing"
     },
     "kandy_perez_alsina": {
+        "carrera_backend": "https://drive.google.com/file/d/1TlFVZMf72RfJSUzcIZar22UQuegmXH-a/view?usp=sharing",
         "python_analytics": "https://drive.google.com/file/d/1y86ZtR23lCSJrnWyO7do70Z_Sc1TEM2U/view?usp=sharing",
         "python_django": "https://drive.google.com/file/d/1JoBUWSlxgxqWq3NgFaDOyGk-tQfZd5w0/view?usp=sharing",
         "python_programador": "https://drive.google.com/file/d/1pH1M72i_RKuf9_du9bLDlldZZlIE-35g/view?usp=sharing",
@@ -208,6 +209,7 @@ const certificates = {
         "python_inicial": "https://drive.google.com/file/d/1gN6uPSe4fChu3P64WWPDccMlNF81q8Wz/view?usp=sharing"
     },
     "fernando_mendoza": {
+        "carrera_backend": "https://drive.google.com/file/d/1hCCIVz2dzf0Z8oa0QeRkPh-vNwjGuuC5/view?usp=sharing",
         "python_django": "https://drive.google.com/file/d/1eMOwvmBjjr1uZVlMtnHEaMMQWICIKXlq/view?usp=sharing",
         "python_programador": "https://drive.google.com/file/d/1QVHsZ4a94H7n9wAojdUzn66oc7tO-h8v/view?usp=sharing",
         "python_inicial": "https://drive.google.com/file/d/1lSD4Qn8I_e52BtpmRI076ascfvah32sV/view?usp=sharing"
