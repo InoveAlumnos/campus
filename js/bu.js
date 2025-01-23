@@ -13,16 +13,16 @@ document.querySelector('#login').addEventListener('click', function(event) {
 
     // Obtener el valor ingresado en el input Usuario/Email
     const inputValue = document.querySelector('#email').value.trim();
-    // const password = document.querySelector('#password').value.trim();
+    const password = document.querySelector('#password').value.trim();
 
     if (!inputValue) {
-        alert('Por favor, ingrese un usuario válido.');
+        alert('Por favor, ingrese un usuario o email.');
         return;
     }
-    // if (!password) {
-    //     alert('Por favor, ingrese su contraseña.');
-    //     return;
-    // }
+    if (!password) {
+        alert('Por favor, ingrese su contraseña.');
+        return;
+    }
 
     if (inputValue.includes('@')) {
         // Si es un email, obtener la parte antes del @
@@ -34,14 +34,14 @@ document.querySelector('#login').addEventListener('click', function(event) {
         if (matchedUser) {
             saveUserAndRedirect(matchedUser);
         } else {
-            alert('Usuario incorrecto.');
+            alert('Usuario o Email incorrecto.');
         }
     } else {
         // Si no es un email, buscar directamente el usuario en el JSON
         if (users[inputValue]) {
             saveUserAndRedirect(users[inputValue].user_1);
         } else {
-            alert('Usuario incorrecto.');
+            alert('Usuario o Email incorrecto.');
         }
     }
 });
@@ -61,16 +61,16 @@ function saveUserAndRedirect(user) {
     window.location.href = './cursos.html'; // Redirigir a la página /cursos
 }
 
-// // Seleccionar el botón de toggle y el input de contraseña
-// document.querySelectorAll('.toggle-password').forEach(toggle => {
-//     toggle.addEventListener('click', function () {
-//         const passwordInput = this.previousElementSibling;
-//         if (passwordInput.type === "password") {
-//             passwordInput.type = "text";
-//             this.textContent = "🔒";
-//         } else {
-//             passwordInput.type = "password";
-//             this.textContent = "👁️";
-//         }
-//     });
-// });
+// Seleccionar el botón de toggle y el input de contraseña
+document.querySelectorAll('.toggle-password').forEach(toggle => {
+    toggle.addEventListener('click', function () {
+        const passwordInput = this.previousElementSibling;
+        if (passwordInput.type === "password") {
+            passwordInput.type = "text";
+            this.textContent = "🔒";
+        } else {
+            passwordInput.type = "password";
+            this.textContent = "👁️";
+        }
+    });
+});
