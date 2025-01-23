@@ -6444,7 +6444,7 @@ const users = {
         "user_2": "fernmishelle",
         "backend": true,
         "frontend": false,
-        "completo_backend": false,
+        "completo_backend": true,
         "completo_frontend": false
     },
     "david_aponte_arias": {
@@ -6508,7 +6508,7 @@ const users = {
         "user_2": "perezkandy29",
         "backend": true,
         "frontend": false,
-        "completo_backend": false,
+        "completo_backend": true,
         "completo_frontend": false
     },
     "diego_chica_varela": {
