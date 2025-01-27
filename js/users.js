@@ -5027,7 +5027,7 @@ const users = {
         "user_1": "tatiana_carcamo",
         "user_2": "carcamoreulatatiana",
         "backend": true,
-        "frontend": false,
+        "frontend": true,
         "completo_backend": true,
         "completo_frontend": false
     },
