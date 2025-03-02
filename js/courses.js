@@ -9,7 +9,7 @@ const courses = {
             'repos_href': "./pi_repos.html",
         },
         {
-            'label': 'programador_python',
+            'label': 'python_programador',
             'title': 'Programador Python',
             'logo': "./images/ProgramadorPython.png",
             'videos_clase_href': "https://www.youtube.com/watch?v=lDEdDnjX_kY&list=PL0LX2m78TeCs6ljHyZ0sasLIDUK2MSn8V",
