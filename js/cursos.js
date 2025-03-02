@@ -74,8 +74,14 @@ function generateCourseCardHTML(course, userCertificates, career) {
             </a>
           `
         : '';
-
-    
+        const proyecto = certificadoHTML === '' && certificadoCarreraBackend === '' && certificadoCarreraFrontend === ''
+        ? `
+            <a class="card-info-item" href="./proyecto_${course.label}.html">
+                <img src="./images/inove_logo.svg" width="42px" height="38px">
+                <span>Proyecto</span>
+            </a>
+        `
+        : '';
 
     // Retornar el HTML completo para este curso
     return `
@@ -93,6 +99,11 @@ function generateCourseCardHTML(course, userCertificates, career) {
                     <img src="./images/desafios.png" alt="Apuntes">
                     <span>Apuntes</span>
                 </a>
+                <a class="card-info-item" href="${course.repos_href}">
+                    <img src="./images/github.png" alt="gtihub" width="42px">
+                    <span>Repos de codigo</span>
+                </a>
+                ${proyecto}
                 ${certificadoHTML}
                 ${certificadoCarreraBackend}
                 ${certificadoCarreraFrontend}

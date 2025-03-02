@@ -54,17 +54,17 @@
     flex-direction: column;
     gap: 20px;
     padding: 20px;
-    justify-content: center;
+    justify-content: start;
     overflow-y: auto;
   }
 
   .cursos {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 20px;
     padding: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: top;
+    align-items: center;
     overflow-y: auto;
   }
 
@@ -74,51 +74,17 @@
     padding: 10px;
 
    }
-   #nota2 {
-    background-color: wheat;
-    color: #202020;
-    padding: 10px;
-   }
-   #nota3 {
-    background-color: lightcoral;
-    color: #202020;
-    padding: 10px;
-   }
 
   .card {
     display: flex;
     flex-direction: column;
+    padding: 10px;
     width: 300px;
-    height: 450px;
     background: linear-gradient(270deg, rgb(0, 177, 185) 0%, rgb(0, 151, 236) 100%);
     border: #202020 1px solid;
     border-radius: 10px;
     gap: 10px;
     box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
-  }
-
-  .card-title {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: center;
-    height: 70px;
-    font-size: 1rem;
-    font-weight: bold;
-    padding-left: 20px;
-  }
-
-  .card-logo {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    background-color: #202020;
-  }
-
-  .card-logo img {
-    height: 100%;
   }
 
   .card-info {
@@ -138,4 +104,10 @@
 
   #logout {
     cursor: pointer;
+  }
+
+  .link_tutorial {
+    cursor: pointer;
+    color: darkblue;
+    text-decoration: underline;
   }

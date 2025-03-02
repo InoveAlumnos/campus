@@ -1,0 +1,87 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: inherit;
+    color: inherit;
+
+  }
+
+
+
+  html {
+    height: 100%;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #202020;
+    color: white;
+  }
+  
+  /* Container */
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: #202020;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  .top {
+    height: 84px;
+    background: linear-gradient(270deg, rgb(0, 177, 185) 0%, rgb(0, 151, 236) 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    justify-content: start;
+    overflow-y: auto;
+  }
+
+  #logout {
+    cursor: pointer;
+  }
+
+  .link {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  #nota2 {
+    background-color: wheat;
+    color: #202020;
+    padding: 10px;
+   }
+
+   .main h1 {
+    padding: 10px;
+  }
+
+  .main h3 {
+    padding: 10px;
+  }
+
+   .main p {
+    padding: 5px;
+    padding-left: 10px;
+  }
