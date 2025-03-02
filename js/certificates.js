@@ -169,6 +169,7 @@ const certificates = {
     },
     "santiago_fernandez": {
         "python_django": "https://drive.google.com/file/d/1lEotAxHO9g-NzYfM1vmUU2BulSo_N5Dv/view?usp=sharing",
+        "python_programador": "https://drive.google.com/file/d/18qVKS9xFPOgjC1jw_K2mQiQjWFLDaaTf/view?usp=sharing",
         "python_inicial": "https://drive.google.com/file/d/10PmPIf6xpgvX3MFSMrMXLUYddUXDajLV/view?usp=sharing"
     },
     "juan_berti": {
@@ -287,6 +288,11 @@ const certificates = {
         "python_analytics": "https://drive.google.com/file/d/1CVK7eiQBoc7HvvOPn_cFmwSGbf-A27lb/view?usp=sharing",
         "python_programador": "https://drive.google.com/file/d/1lGZStROkum2bG2yHQQlUcKWnX3d2TuJu/view?usp=sharing",
         "python_inicial": "https://drive.google.com/file/d/15zGrRzB-wpMto93LosoLi0_f9lxdFDOX/view?usp=sharing"
+    },
+    "lucas_ojeda_recalde": {
+        "python_django": "https://drive.google.com/file/d/1YrtF1JflrfNPm6Q3b8wRREvzZpD2ZhwU/view?usp=sharing",
+        "python_programador": "https://drive.google.com/file/d/1YrZdVsAAeEOTp6QjXxC_GEBUhoGDKRz1/view?usp=sharing",
+        "python_inicial": "https://drive.google.com/file/d/1a5jQBIJSThOzkjuooVqL4iiVU2ERwVJm/view?usp=sharing",
     },
     "luis_marriott": {
         "python_analytics": "https://drive.google.com/file/d/1SqKj0e2iejM8peKe0xJBO4UUGsKTzgTQ/view?usp=sharing",
@@ -646,6 +652,7 @@ const certificates = {
         "python_inicial": "https://drive.google.com/file/d/1j_rrdYY9cnMb-0vE25iMpabM_i5zftEg/view?usp=sharing"
     },
     "leon_diaz": {
+        "python_analytics": "https://drive.google.com/file/d/1hM8QTDhjl4do7Ht_AWxlL3zgfGDB5xOz/view?usp=sharing",
         "python_programador": "https://drive.google.com/file/d/18h5Wcd7fHjb3mAW4GJk5jBoHHF-mt4fl/view?usp=sharing",
         "python_inicial": "https://drive.google.com/file/d/13lvKzfDd3sQkiFopJr5NfRjIz9cVDVKA/view?usp=sharing"
     },
