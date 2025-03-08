@@ -4116,7 +4116,7 @@ const users = {
         "user_2": "juan.ojedat7",
         "backend": true,
         "frontend": false,
-        "completo_backend": false,
+        "completo_backend": true,
         "completo_frontend": false
     },
     "ezequiel_nunez": {

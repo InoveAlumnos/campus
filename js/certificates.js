@@ -287,7 +287,8 @@ const certificates = {
     "juan_ojeda_tamra": {
         "python_analytics": "https://drive.google.com/file/d/1CVK7eiQBoc7HvvOPn_cFmwSGbf-A27lb/view?usp=sharing",
         "python_programador": "https://drive.google.com/file/d/1lGZStROkum2bG2yHQQlUcKWnX3d2TuJu/view?usp=sharing",
-        "python_inicial": "https://drive.google.com/file/d/15zGrRzB-wpMto93LosoLi0_f9lxdFDOX/view?usp=sharing"
+        "python_inicial": "https://drive.google.com/file/d/15zGrRzB-wpMto93LosoLi0_f9lxdFDOX/view?usp=sharing",
+        "carrera_backend": "https://drive.google.com/file/d/13qZUuuiCItJftg9yRCBRd5ZdjuquR6sE/view?usp=sharing",
     },
     "lucas_ojeda_recalde": {
         "python_django": "https://drive.google.com/file/d/1YrtF1JflrfNPm6Q3b8wRREvzZpD2ZhwU/view?usp=sharing",
