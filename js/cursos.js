@@ -103,7 +103,6 @@ function generateCourseCardHTML(course, userCertificates, career) {
                     <img src="./images/github.png" alt="gtihub" width="42px">
                     <span>Repos de codigo</span>
                 </a>
-                ${proyecto}
                 ${certificadoHTML}
                 ${certificadoCarreraBackend}
                 ${certificadoCarreraFrontend}
