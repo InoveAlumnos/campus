@@ -5108,7 +5108,7 @@ const users = {
         "user_2": "franciscojmavila",
         "backend": true,
         "frontend": false,
-        "completo_backend": false,
+        "completo_backend": true,
         "completo_frontend": false
     },
     "agustin_hoffmann": {

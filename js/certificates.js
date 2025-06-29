@@ -248,7 +248,8 @@ const certificates = {
     "francisco_avila": {
         "python_analytics": "https://drive.google.com/file/d/1XE14rVo4fMipcevdNdDswpKf60QrxhyI/view?usp=sharing",
         "python_programador": "https://drive.google.com/file/d/1aP97HEtWYO6gojcZ1b2gGiKRjm9IkBMz/view?usp=sharing",
-        "python_inicial": "https://drive.google.com/file/d/1adjIbFTKTAcT0RVR2o2WY93frtdHlPyW/view?usp=sharing"
+        "python_inicial": "https://drive.google.com/file/d/1adjIbFTKTAcT0RVR2o2WY93frtdHlPyW/view?usp=sharing",
+        "carrera_backend": "https://drive.google.com/file/d/1bGbo7ENy3m1RhuAVfqez2QP4RT2Nr6jT/view?usp=sharing",
     },
     "daniel_martinez": {
         "python_analytics": "https://drive.google.com/file/d/12NM0dvP5B7j-JHt_xW7q_G_IX6Fud3sC/view?usp=sharing",
